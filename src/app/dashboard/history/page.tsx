@@ -8,6 +8,9 @@ import Image from "next/image";
 import { TEMPLATE } from "../_components/TemplateListSection";
 import CopyButton from "./CopyButton"; // Import the new component
 
+// Force dynamic rendering to prevent data fetching during build time
+export const dynamic = "force-dynamic";
+
 export interface HISTORY {
   id: Number;
   formData: string;
